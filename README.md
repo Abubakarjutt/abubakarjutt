@@ -7,7 +7,7 @@ A lifelong learner and problem solver, I have always been fascinated by the powe
 
 Skills: Python / Tensorflow / PyTorch / NLP / ML
 
-- 🔭 I’m currently working on ML assisted data analysis | actionable insights 
+- 🔭 I’m currently working on AI Agents and RAG Chatbots 
 - 🌱 I’m currently learning CI/CD | MLOps 
 
 

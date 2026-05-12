@@ -1,8 +1,8 @@
 
-# README.md for Abubakarjutt/Triplet-Networks-for-Robust-Text-Classification
+# README.md for Abubakarjutt/Unintended-Identity-Bias-in-Text-Classification
 
 ## Project Overview
-This repository contains the core implementation for the Abubakarjutt/Triplet-Networks-for-Robust-Text-Classification project.
+This repository contains the core implementation for the Abubakarjutt/Unintended-Identity-Bias-in-Text-Classification project.
 
 ## Installation
 Please ensure you have the necessary dependencies (e.g., PyTorch, Transformers).

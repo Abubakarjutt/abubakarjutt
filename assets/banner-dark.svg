@@ -1,0 +1,54 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Terminal window. Command: whoami. Output: Muhammad Abubakar, Senior AI/ML Engineer, Production GenAI and Agentic Systems, six-plus years shipping AI that survives contact with production.">
+  <title>Muhammad Abubakar — Senior AI/ML Engineer, Production GenAI &amp; Agentic Systems</title>
+  <defs>
+    <clipPath id="win-d">
+      <rect x="0" y="0" width="1200" height="320" rx="16"/>
+    </clipPath>
+    <pattern id="scan-d" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="1.3" fill="#33FF66" opacity="0.07"/>
+    </pattern>
+    <filter id="glow-d" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="vig-d" cx="50%" cy="45%" r="75%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.55"/>
+    </radialGradient>
+  </defs>
+
+  <g clip-path="url(#win-d)">
+    <rect width="1200" height="320" fill="#070B08"/>
+    <rect width="1200" height="320" fill="url(#scan-d)"/>
+    <rect width="1200" height="320" fill="url(#vig-d)"/>
+
+    <!-- title bar -->
+    <rect width="1200" height="44" fill="#121712"/>
+    <line x1="0" y1="44" x2="1200" y2="44" stroke="#1F2A22" stroke-width="1"/>
+    <circle cx="28" cy="22" r="6" fill="#FF5F56" opacity="0.85"/>
+    <circle cx="50" cy="22" r="6" fill="#FFBD2E" opacity="0.85"/>
+    <circle cx="72" cy="22" r="6" fill="#27C93F" opacity="0.85"/>
+    <text x="600" y="27" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#1B6E3A">muhammad@production: ~</text>
+
+    <!-- body -->
+    <text x="40" y="100" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#1B6E3A">guest@github:~$ <tspan fill="#33FF66">whoami</tspan></text>
+
+    <text x="40" y="163" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="700" font-size="46" fill="#33FF66" filter="url(#glow-d)">Muhammad Abubakar</text>
+
+    <text x="40" y="202" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#1B6E3A">Senior AI/ML Engineer — Production GenAI &amp; Agentic Systems</text>
+
+    <text x="40" y="234" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#1B6E3A">6+ yrs shipping AI that survives contact with production</text>
+
+    <text x="40" y="268" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#145C33">LangGraph · AWS Bedrock · RAG · Text-to-SQL · MLOps</text>
+
+    <text x="40" y="302" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#1B6E3A">guest@github:~$</text>
+    <rect x="218" y="288" width="11" height="18" fill="#33FF66">
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.45;0.45;0.9;1" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <rect x="0.75" y="0.75" width="1198.5" height="318.5" rx="15.25" fill="none" stroke="#1F2A22" stroke-width="1.5"/>
+</svg>

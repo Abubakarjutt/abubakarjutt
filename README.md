@@ -45,6 +45,10 @@ RAKEZ, UAE · Oct 2025 → now
   churn, renewal, lead-priority ML
   drift detection + retraining
 
+Side builds · ongoing
+  graphbrain — knowledge graph tool
+  Trivio — building in the open
+
 Engro Holdings · Aug 2024 → Sep 2025
   AI/ML Engineer, GenAI lead
   LangGraph + Bedrock + FastAPI

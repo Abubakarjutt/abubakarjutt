@@ -1,5 +1,5 @@
-<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Terminal window. Command: whoami. Output: Muhammad Abubakar, Senior Data Scientist (AI/ML), Production GenAI and Agentic AI Systems, 6+ yrs shipping AI that stays in production.">
-  <title>Muhammad Abubakar — Senior Data Scientist (AI/ML), Production GenAI &amp; Agentic AI Systems</title>
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Terminal window. Command: whoami. Output: Muhammad Abubakar, AI Engineer, taking GenAI from pilot to production, 68% fewer data requests for a 3,000-person enterprise.">
+  <title>Muhammad Abubakar — AI Engineer, Taking GenAI from pilot to production</title>
   <defs>
     <clipPath id="win-d">
       <rect x="0" y="0" width="1200" height="320" rx="16"/>
@@ -38,11 +38,11 @@
 
     <text x="40" y="163" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-weight="700" font-size="46" fill="#33FF66" filter="url(#glow-d)">Muhammad Abubakar</text>
 
-    <text x="40" y="202" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#1B6E3A">Senior Data Scientist (AI/ML) — Production GenAI &amp; Agentic AI Systems</text>
+    <text x="40" y="202" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" fill="#1B6E3A">AI Engineer — Taking GenAI from pilot to production</text>
 
-    <text x="40" y="234" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#1B6E3A">6+ yrs shipping AI that stays in production</text>
+    <text x="40" y="234" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" fill="#1B6E3A">68% fewer data requests for a 3,000-person enterprise</text>
 
-    <text x="40" y="268" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#145C33">LangGraph · AWS Bedrock · FastAPI · RAG · Text-to-SQL · MLOps</text>
+    <text x="40" y="268" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" fill="#145C33">Agentic AI · RAG · Text-to-SQL · Voice AI</text>
 
     <text x="40" y="302" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" fill="#1B6E3A">guest@github:~$</text>
     <rect x="218" y="288" width="11" height="18" fill="#33FF66">

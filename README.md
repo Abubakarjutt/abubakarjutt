@@ -19,7 +19,7 @@ finish review, the verdict, and DESIGN.md.
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img alt="Muhammad Abubakar — Senior AI/ML Engineer, Production GenAI &amp; Agentic Systems. Terminal running whoami." src="assets/banner-dark.svg" width="100%">
+  <img alt="Muhammad Abubakar — Senior Data Scientist (AI/ML) | Production GenAI &amp; Agentic AI Systems | LangGraph · AWS Bedrock · RAG · MLOps | 6+ yrs shipping AI that stays in production. Terminal running whoami." src="assets/banner-dark.svg" width="100%">
 </picture>
 
 </div>
@@ -29,19 +29,20 @@ finish review, the verdict, and DESIGN.md.
 ```text
 $ status --check
 [ok] production systems, 6+ yrs live
-[ok] fwd-deployed — US, Gulf clients
-[ok] now: Sr. Data Scientist @ RAKEZ
+[ok] now: Sr. Full Stack DS @ Addo
+[ok] fwd-deployed — RAKEZ, UAE
 [ok] open to: full-time, remote
 [ok] relocate: EU / UK / Gulf
 ```
 
-I build AI systems that stay in production after I leave. Over six years I've designed, shipped, and operated ML and GenAI systems for enterprise clients across the US and the Gulf — most recently a LangGraph + AWS Bedrock conversational platform that lets 3,000+ employees at a large enterprise client query internal databases and self-serve HR information in plain English. I work directly with sales, CX, and ops stakeholders to turn ambiguous business questions into deployed systems, then train the client's own engineers to run them without me.
+I build AI systems that stay in production after I leave. Over six-plus years I've designed, shipped, and operated ML and GenAI systems for enterprise clients across the US and the Gulf — most recently a LangGraph + AWS Bedrock conversational platform that lets 3,000+ employees at Engro Holdings query internal databases and self-serve HR information in plain English. I work directly with sales, CX, and ops stakeholders to turn ambiguous business questions into deployed systems, then train the client's own engineers to run them without me.
 
 ## deploy log
 
 ```text
 RAKEZ, UAE · Oct 2025 → now
-  Sr. Data Scientist (via Addo AI)
+  Senior Data Scientist
+  (Forward Deployed by Addo AI)
   churn, renewal, lead-priority ML
   drift detection + retraining
 
@@ -49,19 +50,34 @@ Side builds · ongoing
   graphbrain — knowledge graph tool
   Trivio — building in the open
 
+Addo AI · Aug 2026 → now
+  Senior Full Stack DS (AI/ML)
+  conversational AI platform
+  LangGraph, Bedrock, FastAPI
+  -68% BI queries, -89% HR tickets
+  trained 4 engineers independently
+
 Engro Holdings · Aug 2024 → Sep 2025
   AI/ML Engineer, GenAI lead
-  LangGraph + Bedrock + FastAPI
+  LangGraph, Bedrock, FastAPI
   3,000+ employees, plain English
   -68% BI queries, -89% HR tickets
-  trained 4 engineers to run solo
+  trained 2 junior + 2 peers
+
+Addo AI · Jul 2024 → Aug 2026
+  Senior Data Scientist (AI/ML)
+  Engro conversational AI platform
+  LangGraph, Bedrock, FastAPI
+  3,000+ employees, plain English
+  -68% BI queries, -89% HR tickets
+  video anomaly: -35% annotation,
+  +42% throughput
 
 Addo AI · Mar 2022 → Jun 2024
   Associate → Data Scientist
-  annotation tooling — T5,
+  annotation tooling: T5,
   Detectron2, spaCy + active learn
   -82% to -96% annotation time
-  video anomaly detection (OpenCV)
   mentored 3 junior scientists
 
 ITU · Feb 2021 → Jan 2022
@@ -83,6 +99,7 @@ genai:
   - langgraph, aws bedrock (claude)
   - rag, text-to-sql
   - streaming apis (fastapi)
+  - conversational ai platform
 mlops:
   - aws: dynamodb, opensearch
   - aws: redshift, lambda, s3

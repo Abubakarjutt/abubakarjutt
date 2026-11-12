@@ -1,47 +1,65 @@
 <!--
-Matches the portfolio at abubakarjutt.github.io: a night departure board.
-Graphite board, split-flap tiles, one signal green for live states.
-The banner and stack panel are PNGs rendered from HTML so GitHub shows the
-real Overpass type; everything else is plain Markdown.
+Datasheet for part MA-01. A sibling of abubakarjutt.github.io, not a copy:
+the site is a night departure board; this profile is a component datasheet.
+IBM Plex on GitHub's own ground, hairline rules, one green mark.
+Images are rendered from HTML in light and dark to sit flush on either theme.
 -->
 
-<a href="https://abubakarjutt.github.io/"><img alt="Muhammad Abubakar, Senior Data Scientist at Addo AI, Islamabad. I take generative AI from pilot to production." src="assets/board.png" width="100%"></a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.png">
+  <img alt="MA-01, production GenAI engineer. Muhammad Abubakar takes generative AI from pilot to production. Senior Data Scientist at Addo AI, Islamabad." src="assets/header-light.png" width="100%">
+</picture>
+
+### General description
 
 Most GenAI pilots look great in the demo and break on real data. I work on the part that comes after: getting them into production and keeping them working.
 
-As a forward deployed engineer for Addo AI, I built a plain-English data and HR assistant for the 3,000+ employees of Engro Holdings (LangGraph, AWS Bedrock, FastAPI with streaming). BI queries dropped **68%**, HR queries dropped **89%**, and the client's own engineers now maintain it. At RAKEZ in the UAE, I shipped churn, segmentation and lead-scoring models that run in production with drift detection and automated retraining.
+As a forward deployed engineer for Addo AI, I built a plain-English data and HR assistant for the 3,000+ employees of Engro Holdings, on LangGraph, AWS Bedrock and FastAPI with streaming. The client's own engineers now maintain it. At RAKEZ in the UAE, I shipped churn, segmentation and lead-scoring models that run in production with drift detection and automated retraining.
 
-**[Portfolio](https://abubakarjutt.github.io/)** &nbsp;·&nbsp; **[Book a call](https://calendly.com/abubakarjutt/new-meeting)** &nbsp;·&nbsp; **[LinkedIn](https://www.linkedin.com/in/muhammad-abubakar-ds/)**
+### Typical performance
 
-## Departures
+| Parameter | Conditions | Value |
+| :-- | :-- | --: |
+| BI request volume | Engro Holdings, 3,000+ employees | **−68%** |
+| HR request volume | Engro Holdings, 3,000+ employees | **−89%** |
+| Annotation time | T5, Detectron2, spaCy with active learning | **−82% to −96%** |
+| Video annotation effort | Anomaly detection pipeline | **−35%** |
+| Video throughput | Anomaly detection pipeline | **+42%** |
+| Chatbot accuracy | Fine-tuned transformer, Auxtend | **+20%** |
+| Search relevance | Semantic search rebuild, Auxtend | **+30%** |
 
-| When | Service | Operator | Status | Result |
-| :-- | :-- | :-- | :-- | :-- |
-| Aug 2026 – now | Senior Data Scientist (AI/ML) | Addo AI | 🟢 In service | Conversational AI platform on LangGraph, Bedrock and FastAPI. **−68%** BI queries, **−89%** HR queries; trained 4 engineers to maintain it |
-| Oct 2025 – now | Forward Deployed Engineer, for Addo AI | RAKEZ, UAE | 🟢 In service | Churn, renewal and lead-priority models in production, with drift detection and retraining |
-| Aug 2024 – Sep 2025 | Forward Deployed Engineer, for Addo AI | Engro Holdings | Arrived | Plain-English data and HR assistant for 3,000+ employees. **−68%** BI queries, **−89%** HR queries; trained 2 junior engineers and 2 peers |
-| Jul 2024 – Aug 2026 | Data Scientist (AI/ML) | Addo AI | Arrived | Engro conversational AI platform; video anomaly detection with **−35%** annotation effort and **+42%** throughput |
-| Mar 2022 – Jun 2024 | Associate Data Scientist (AI/ML) | Addo AI | Arrived | Annotation tooling with T5, Detectron2, spaCy and active learning: **82–96%** less annotation time; mentored 3 junior scientists |
-| Feb 2021 – Feb 2022 | Research Associate | ITU | Arrived | Crime-pattern EDA and bias mitigation; published findings |
-| Jul 2019 – Jan 2020 | Machine Learning Intern | Auxtend | Arrived | Fine-tuned a transformer chatbot and rebuilt semantic search: **+20%** accuracy, **+30%** relevance |
+### Pin configuration
 
-## Stack
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/pins-dark.png">
+  <img alt="Pin configuration. Generative AI: LangGraph, AWS Bedrock (Claude), RAG, Text-to-SQL, FastAPI streaming, voice agents, OpenAI, Gemini. Cloud and MLOps: OpenSearch, DynamoDB, Redshift, Lambda and S3. ML and vision: drift detection, active learning, OpenCV, TensorRT." src="assets/pins-light.png" width="100%">
+</picture>
 
-<img alt="Stack. Generative AI: LangGraph, AWS Bedrock (Claude), RAG, Text-to-SQL, FastAPI streaming, voice agents, OpenAI, Gemini. Cloud and MLOps: DynamoDB, OpenSearch, Redshift, Lambda, S3, EC2, CloudWatch, knowledge bases. Machine learning: churn scoring, segmentation, lead scoring, drift detection, active learning. Vision: OpenCV, TensorFlow, TensorRT, Detectron2." src="assets/stack.png" width="100%">
+### Revision history
 
-## Featured builds
-
-**[graphbrain](https://github.com/Abubakarjutt/graphbrain)**: turns any input into a persistent, queryable knowledge graph.
-
-**[Trivio](https://github.com/Abubakarjutt/Trivio)**: building in the open.
-
-## Education
-
-| Degree | Institution | Years |
+| Rev. | Date | Description of change |
 | :-- | :-- | :-- |
-| M.S. Data Science | University of Management and Technology | 2018–2020 |
-| B.S. Accounting and Finance | University of Central Punjab | 2013–2016 |
+| 7 | Aug 2026 – present | **Senior Data Scientist (AI/ML), Addo AI.** Conversational AI platform; trained 4 engineers to maintain it |
+| 6 | Oct 2025 – present | **Forward Deployed Engineer, RAKEZ, UAE** (for Addo AI). Churn, renewal and lead-priority models with drift detection and retraining |
+| 5 | Aug 2024 – Sep 2025 | **Forward Deployed Engineer, Engro Holdings** (for Addo AI). Plain-English data and HR assistant; trained 2 junior engineers and 2 peers |
+| 4 | Jul 2024 – Aug 2026 | **Data Scientist (AI/ML), Addo AI.** Engro platform; video anomaly detection |
+| 3 | Mar 2022 – Jun 2024 | **Associate Data Scientist (AI/ML), Addo AI.** Annotation tooling; mentored 3 junior scientists |
+| 2 | Feb 2021 – Feb 2022 | **Research Associate, ITU.** Crime-pattern EDA and bias mitigation; published findings |
+| 1 | Jul 2019 – Jan 2020 | **Machine Learning Intern, Auxtend.** Transformer chatbot and semantic search |
+| 0 | 2013 – 2020 | **Initial release.** B.S. Accounting and Finance, University of Central Punjab (2013–2016); M.S. Data Science, University of Management and Technology (2018–2020) |
 
-## Contact
+### Reference designs
 
-Email **abubakarsahi@hotmail.com**, [book a call](https://calendly.com/abubakarjutt/new-meeting), or [connect on LinkedIn](https://www.linkedin.com/in/muhammad-abubakar-ds/). I speak English and Urdu.
+- **[graphbrain](https://github.com/Abubakarjutt/graphbrain)**: turns any input into a persistent, queryable knowledge graph.
+- **[Trivio](https://github.com/Abubakarjutt/Trivio)**: in development, built in the open.
+
+### Ordering information
+
+| Channel | Address |
+| :-- | :-- |
+| Book a call | [calendly.com/abubakarjutt/new-meeting](https://calendly.com/abubakarjutt/new-meeting) |
+| Email | abubakarsahi@hotmail.com |
+| Portfolio | [abubakarjutt.github.io](https://abubakarjutt.github.io/) |
+| LinkedIn | [in/muhammad-abubakar-ds](https://www.linkedin.com/in/muhammad-abubakar-ds/) |
+
+<sub>Languages supported: English, Urdu. Every figure on this sheet comes from a system in production.</sub>

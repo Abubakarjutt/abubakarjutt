@@ -62,4 +62,4 @@ As a forward deployed engineer for Addo AI, I built a plain-English data and HR 
 | Portfolio | [abubakarjutt.github.io](https://abubakarjutt.github.io/) |
 | LinkedIn | [in/muhammad-abubakar-ds](https://www.linkedin.com/in/muhammad-abubakar-ds/) |
 
-<sub>Languages supported: English, Urdu. Every figure on this sheet comes from a system in production.</sub>
+<sub>Languages supported: English, Urdu. Every figure on this sheet is real.</sub>

@@ -15,10 +15,10 @@
 <text x="667.0" y="80" font-family="'Overpass Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="30" font-weight="600" fill="#eef0ea">8</text>
 <text x="651.0" y="124" font-family="Overpass, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#a3abb6">Years on GitHub</text>
 <line x1="48" y1="144" x2="852" y2="144" stroke="#2b3036"/>
-<rect x="48.0" y="160" width="461.2" height="8" rx="2" fill="#5cc995"/>
-<rect x="511.2" y="160" width="151.9" height="8" rx="2" fill="#c9cec6"/>
-<rect x="665.1" y="160" width="87.9" height="8" rx="2" fill="#8f969e"/>
-<rect x="755.0" y="160" width="57.0" height="8" rx="2" fill="#5d646c"/>
+<rect x="48.0" y="160" width="460.8" height="8" rx="2" fill="#5cc995"/>
+<rect x="510.8" y="160" width="152.4" height="8" rx="2" fill="#c9cec6"/>
+<rect x="665.2" y="160" width="87.8" height="8" rx="2" fill="#8f969e"/>
+<rect x="755.1" y="160" width="56.9" height="8" rx="2" fill="#5d646c"/>
 <rect x="814.0" y="160" width="36.0" height="8" rx="2" fill="#3b4148"/>
 <circle cx="53" cy="193" r="5" fill="#5cc995"/>
 <text x="64" y="198" font-family="Overpass, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#eef0ea">TypeScript 58%</text>

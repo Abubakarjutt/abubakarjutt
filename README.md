@@ -45,18 +45,3 @@ As a forward deployed engineer for Addo AI, I built a plain-English data and HR 
 ## Contact
 
 Email **abubakarsahi@hotmail.com**, [book a call](https://calendly.com/abubakarjutt/new-meeting), or [connect on LinkedIn](https://www.linkedin.com/in/muhammad-abubakar-ds/). I speak English and Urdu.
-
-<table>
-<tr>
-<td>
-
-<img alt="Muhammad Abubakar's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Abubakarjutt&show_icons=true&hide_border=true&hide_title=true&bg_color=16191D&title_color=5CC995&icon_color=5CC995&text_color=EEF0EA&hide=stars">
-
-</td>
-<td>
-
-<img alt="Muhammad Abubakar's most-used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abubakarjutt&layout=compact&hide_border=true&hide_title=true&bg_color=16191D&title_color=5CC995&text_color=EEF0EA">
-
-</td>
-</tr>
-</table>

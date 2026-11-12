@@ -27,3 +27,7 @@ Machine Learning Intern. Fine-tuned a transformer chatbot and rebuilt semantic s
 
 **M.S. Data Science**, University of Management and Technology, *2018 – 2020*  
 **B.S. Accounting and Finance**, University of Central Punjab, *2013 – 2016*
+
+### On GitHub
+
+<img alt="GitHub activity: contributions, commits and pull requests in the last year, years on GitHub, and top languages across public repositories." src="assets/stats.svg" width="100%">

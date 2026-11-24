@@ -1,29 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="236" viewBox="0 0 900 236" role="img" aria-labelledby="t">
-<title id="t">GitHub stats for Muhammad Abubakar: Contributions, last year 163, Commits, last year 78, Pull requests, last year 48, Years on GitHub 8. Languages: Rust 91%, TypeScript 4%, Python 3%, Swift 1%, Other 1%</title>
+<title id="t">GitHub stats for Muhammad Abubakar: Contributions, last year 175, Commits, last year 84, Pull requests, last year 54, Years on GitHub 8. Languages: Rust 90%, TypeScript 5%, Python 3%, Swift 1%, Other 1%</title>
 <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16191d"/><stop offset="1" stop-color="#0f1114"/></linearGradient><linearGradient id="flap" x1="0" y1="0" x2="0" y2="1"><stop offset="0.5" stop-color="#262a31"/><stop offset="0.5" stop-color="#1d2126"/></linearGradient></defs>
 <rect width="900" height="236" fill="url(#bg)"/>
 <rect x="48.0" y="40" width="185.0" height="58" rx="4" fill="url(#flap)" stroke="#30353d"/>
-<text x="64.0" y="80" font-family="'Overpass Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="30" font-weight="600" fill="#eef0ea">163</text>
+<text x="64.0" y="80" font-family="'Overpass Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="30" font-weight="600" fill="#eef0ea">175</text>
 <text x="48.0" y="124" font-family="Overpass, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#a3abb6">Contributions, last year</text>
 <rect x="249.0" y="40" width="185.0" height="58" rx="4" fill="url(#flap)" stroke="#30353d"/>
-<text x="265.0" y="80" font-family="'Overpass Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="30" font-weight="600" fill="#eef0ea">78</text>
+<text x="265.0" y="80" font-family="'Overpass Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="30" font-weight="600" fill="#eef0ea">84</text>
 <text x="249.0" y="124" font-family="Overpass, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#a3abb6">Commits, last year</text>
 <rect x="450.0" y="40" width="185.0" height="58" rx="4" fill="url(#flap)" stroke="#30353d"/>
-<text x="466.0" y="80" font-family="'Overpass Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="30" font-weight="600" fill="#eef0ea">48</text>
+<text x="466.0" y="80" font-family="'Overpass Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="30" font-weight="600" fill="#eef0ea">54</text>
 <text x="450.0" y="124" font-family="Overpass, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#a3abb6">Pull requests, last year</text>
 <rect x="651.0" y="40" width="185.0" height="58" rx="4" fill="url(#flap)" stroke="#30353d"/>
 <text x="667.0" y="80" font-family="'Overpass Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="30" font-weight="600" fill="#eef0ea">8</text>
 <text x="651.0" y="124" font-family="Overpass, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#a3abb6">Years on GitHub</text>
 <line x1="48" y1="144" x2="852" y2="144" stroke="#2b3036"/>
-<rect x="48.0" y="160" width="728.6" height="8" rx="2" fill="#5cc995"/>
-<rect x="778.6" y="160" width="29.7" height="8" rx="2" fill="#c9cec6"/>
-<rect x="810.4" y="160" width="23.2" height="8" rx="2" fill="#8f969e"/>
-<rect x="835.6" y="160" width="4.0" height="8" rx="2" fill="#5d646c"/>
-<rect x="841.6" y="160" width="8.4" height="8" rx="2" fill="#3b4148"/>
+<rect x="48.0" y="160" width="720.4" height="8" rx="2" fill="#5cc995"/>
+<rect x="770.4" y="160" width="38.4" height="8" rx="2" fill="#c9cec6"/>
+<rect x="810.7" y="160" width="22.8" height="8" rx="2" fill="#8f969e"/>
+<rect x="835.6" y="160" width="3.9" height="8" rx="2" fill="#5d646c"/>
+<rect x="841.5" y="160" width="8.5" height="8" rx="2" fill="#3b4148"/>
 <circle cx="53" cy="193" r="5" fill="#5cc995"/>
-<text x="64" y="198" font-family="Overpass, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#eef0ea">Rust 91%</text>
+<text x="64" y="198" font-family="Overpass, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#eef0ea">Rust 90%</text>
 <circle cx="160.2" cy="193" r="5" fill="#c9cec6"/>
-<text x="171.2" y="198" font-family="Overpass, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#eef0ea">TypeScript 4%</text>
+<text x="171.2" y="198" font-family="Overpass, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#eef0ea">TypeScript 5%</text>
 <circle cx="304.4" cy="193" r="5" fill="#8f969e"/>
 <text x="315.4" y="198" font-family="Overpass, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#eef0ea">Python 3%</text>
 <circle cx="419.0" cy="193" r="5" fill="#5d646c"/>

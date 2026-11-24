@@ -1,8 +1,10 @@
-"""Render assets/stats.svg: a graphite card of public GitHub stats.
+"""Render assets/stats.svg and assets/stats-dark.svg: public GitHub stats
+in the sage-and-rust style of the banner and the portfolio site.
 
 Runs in the daily workflow with the built-in GITHUB_TOKEN, so it only
 sees public data. No third-party service is involved.
 """
+import base64
 import json
 import os
 from datetime import datetime, timezone
@@ -31,14 +33,29 @@ query($login: String!) {
 }
 """
 
-# Graphite board palette, shared with the banner.
-BG_TOP, BG_BOTTOM = "#16191d", "#0f1114"
-RULE, FLAP_TOP, FLAP_BOTTOM, FLAP_EDGE = "#2b3036", "#262a31", "#1d2126", "#30353d"
-GLYPH, SOFT, LAMP = "#eef0ea", "#a3abb6", "#5cc995"
-# Languages after the first fade from glyph to rule, so only the lead is green.
-LANG_FILLS = [LAMP, "#c9cec6", "#8f969e", "#5d646c", "#3b4148"]
-SANS = "Overpass, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
-MONO = "'Overpass Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace"
+# Engineering-manual palette, shared with the banner and abubakarjutt.github.io:
+# cream paper (or green-black at night), sage for structure, rust for signal.
+THEMES = {
+    "light": {
+        "bg": "#fafaf5", "dot": "rgba(26,26,26,0.08)", "cell": "#fafaf5",
+        "ink": "#1a1a1a", "soft": "#4a4a4a", "rule": "rgba(26,26,26,0.16)",
+        "sage": "#55705a", "rust": "#b4532a",
+        "langs": ["#b4532a", "#55705a", "#8fa592", "#c3cfc4", "#d9d7cf"],
+    },
+    "dark": {
+        "bg": "#10130f", "dot": "rgba(232,230,220,0.07)", "cell": "#10130f",
+        "ink": "#e8e6dc", "soft": "#b4b2ab", "rule": "rgba(232,230,220,0.18)",
+        "sage": "#9db89f", "rust": "#e08a5c",
+        "langs": ["#e08a5c", "#9db89f", "#6f8a72", "#45574a", "#33392f"],
+    },
+}
+MONO = "'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace"
+HERE = os.path.dirname(os.path.abspath(__file__))
+# VT323 (SIL OFL, see VT323-OFL.txt) is embedded so the numbers keep their
+# pixel face: GitHub serves SVGs as images, which can't load web fonts.
+with open(os.path.join(HERE, "vt323.woff2"), "rb") as f:
+    VT323 = base64.b64encode(f.read()).decode()
+PIXEL = "VT323, ui-monospace, monospace"
 
 
 def fetch():
@@ -81,43 +98,56 @@ def summarise(user):
     }
 
 
-def render(data):
-    w, h, pad = 900, 236, 48
+def render(data, theme):
+    t = THEMES[theme]
+    w, h, pad = 900, 236, 32
+    title = (
+        "GitHub stats for Muhammad Abubakar: "
+        + ", ".join(f"{label} {value}" for label, value in data["stats"])
+        + ". Languages: "
+        + ", ".join(f"{n} {round(s * 100)}%" for n, s in data["langs"])
+    )
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="t">',
-        '<title id="t">GitHub stats for Muhammad Abubakar: '
-        + escape(", ".join(f"{label} {value}" for label, value in data["stats"]))
-        + ". Languages: "
-        + escape(", ".join(f"{n} {round(s * 100)}%" for n, s in data["langs"]))
-        + "</title>",
-        f'<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{BG_TOP}"/><stop offset="1" stop-color="{BG_BOTTOM}"/></linearGradient>'
-        f'<linearGradient id="flap" x1="0" y1="0" x2="0" y2="1"><stop offset="0.5" stop-color="{FLAP_TOP}"/><stop offset="0.5" stop-color="{FLAP_BOTTOM}"/></linearGradient></defs>',
-        f'<rect width="{w}" height="{h}" fill="url(#bg)"/>',
+        f'<title id="t">{escape(title)}</title>',
+        "<defs>"
+        f'<style>@font-face{{font-family:VT323;src:url(data:font/woff2;base64,{VT323}) format("woff2")}}</style>'
+        f'<pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="{t["dot"]}"/></pattern>'
+        "</defs>",
+        f'<rect width="{w}" height="{h}" fill="{t["bg"]}"/>',
+        f'<rect width="{w}" height="{h}" fill="url(#dots)"/>',
+        f'<text x="{pad}" y="{pad + 8}" font-family="{MONO}" font-size="11" letter-spacing="1.8" fill="{t["sage"]}">ON GITHUB · PUBLIC ACTIVITY</text>',
     ]
+    # Four stat cells in one bordered strip.
+    top, cell_h = pad + 24, 84
     col = (w - pad * 2) / 4
+    out.append(f'<rect x="{pad + 0.5}" y="{top + 0.5}" width="{w - pad * 2 - 1}" height="{cell_h}" fill="{t["cell"]}" stroke="{t["rule"]}"/>')
     for i, (label, value) in enumerate(data["stats"]):
         x = pad + i * col
-        out.append(f'<rect x="{x}" y="{pad - 8}" width="{col - 16}" height="58" rx="4" fill="url(#flap)" stroke="{FLAP_EDGE}"/>')
-        out.append(f'<text x="{x + 16}" y="{pad + 32}" font-family="{MONO}" font-size="30" font-weight="600" fill="{GLYPH}">{value:,}</text>')
-        out.append(f'<text x="{x}" y="{pad + 76}" font-family="{SANS}" font-size="13" fill="{SOFT}">{escape(label)}</text>')
-    bar_y, bar_w = pad + 112, w - pad * 2
-    out.append(f'<line x1="{pad}" y1="{bar_y - 16}" x2="{w - pad}" y2="{bar_y - 16}" stroke="{RULE}"/>')
+        if i:
+            out.append(f'<line x1="{x + 0.5}" y1="{top}" x2="{x + 0.5}" y2="{top + cell_h}" stroke="{t["rule"]}"/>')
+        out.append(f'<text x="{x + 18}" y="{top + 48}" font-family="{PIXEL}" font-size="48" fill="{t["rust"]}">{value:,}</text>')
+        out.append(f'<text x="{x + 18}" y="{top + 70}" font-family="{MONO}" font-size="10" letter-spacing="1.2" fill="{t["soft"]}">{escape(label.upper())}</text>')
+    # Language share: square segments, the lead language in rust.
+    bar_y, bar_w = top + cell_h + 28, w - pad * 2
     x = pad
     for i, (name, share) in enumerate(data["langs"]):
         seg = max(bar_w * share, 2)
-        out.append(f'<rect x="{x:.1f}" y="{bar_y}" width="{seg - 2:.1f}" height="8" rx="2" fill="{LANG_FILLS[i]}"/>')
+        out.append(f'<rect x="{x:.1f}" y="{bar_y}" width="{seg - 2:.1f}" height="8" fill="{t["langs"][i]}"/>')
         x += seg
     lx = pad
     for i, (name, share) in enumerate(data["langs"]):
         label = f"{name} {round(share * 100)}%"
-        out.append(f'<circle cx="{lx + 5}" cy="{bar_y + 33}" r="5" fill="{LANG_FILLS[i]}"/>')
-        out.append(f'<text x="{lx + 16}" y="{bar_y + 38}" font-family="{SANS}" font-size="14" fill="{GLYPH}">{escape(label)}</text>')
-        lx += 16 + len(label) * 7.4 + 32
+        out.append(f'<rect x="{lx}" y="{bar_y + 24}" width="10" height="10" fill="{t["langs"][i]}"/>')
+        out.append(f'<text x="{lx + 18}" y="{bar_y + 33}" font-family="{MONO}" font-size="13" fill="{t["ink"]}">{escape(label)}</text>')
+        lx += 18 + len(label) * 7.9 + 28
     out.append("</svg>")
     return "\n".join(out) + "\n"
 
 
 if __name__ == "__main__":
     os.makedirs("assets", exist_ok=True)
-    with open("assets/stats.svg", "w") as f:
-        f.write(render(summarise(fetch())))
+    data = summarise(fetch())
+    for theme, path in (("light", "assets/stats.svg"), ("dark", "assets/stats-dark.svg")):
+        with open(path, "w") as f:
+            f.write(render(data, theme))

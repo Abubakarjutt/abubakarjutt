@@ -25,9 +25,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit if changed
         run: |
-          git diff --quiet assets/stats.svg && exit 0
+          git diff --quiet assets/stats.svg assets/stats-dark.svg && git ls-files --error-unmatch assets/stats-dark.svg >/dev/null 2>&1 && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/stats.svg
+          git add assets/stats.svg assets/stats-dark.svg
           git commit -m "Refresh stats card"
           git push
